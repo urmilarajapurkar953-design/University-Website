@@ -1,0 +1,62 @@
+.programs {
+  margin: 80px auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Each program card */
+.program {
+  width: calc(33.33% - 20px);
+  position: relative;
+}
+
+/* Image */
+.program img {
+  width: 100%;
+  height: auto;        /* IMPORTANT: no fixed height */
+  aspect-ratio: 4 / 3; /* always keeps perfect shape */
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Caption */
+.caption {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 8px 15px;
+  border-radius: 6px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ------------------------- */
+/* Tablet 992px = 2 columns  */
+/* ------------------------- */
+@media (max-width: 992px) {
+  .program {
+    width: calc(50% - 20px);
+  }
+
+  .caption {
+    font-size: 16px;
+  }
+}
+
+/* ------------------------- */
+/* Mobile 768px = 1 column   */
+/* ------------------------- */
+@media (max-width: 768px) {
+  .program {
+    width: 100%;
+  }
+
+  .caption {
+    font-size: 15px;
+  }
+}

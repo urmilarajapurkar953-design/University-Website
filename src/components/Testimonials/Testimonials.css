@@ -1,0 +1,132 @@
+/* MAIN CONTAINER */
+.testimonials-container {
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  background: #f8f8ff;
+}
+
+/* TESTIMONIAL CARD */
+.testimonial-card {
+  width: 60%;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e6e6e6;
+}
+
+/* USER SECTION */
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.user-section img {
+  width: 85px;
+  height: 85px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #212EA0;
+}
+
+.user-section h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #212EA0;
+}
+
+.location {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.review {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* ARROW BUTTONS */
+.arrow-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.arrow-btn img {
+  width: 45px;
+  height: 45px;
+  transition: 0.3s ease;
+}
+
+.arrow-btn img:hover {
+  transform: scale(1.15);
+}
+
+/* LEFT & RIGHT POSITIONS */
+.left {
+  position: absolute;
+  left: 10%;
+}
+
+.right {
+  position: absolute;
+  right: 10%;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+  .testimonial-card {
+    width: 70%;
+  }
+
+  .left { left: 5%; }
+  .right { right: 5%; }
+}
+
+@media (max-width: 768px) {
+  .testimonial-card {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .user-section img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .arrow-btn img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .left { left: 3%; }
+  .right { right: 3%; }
+}
+
+@media (max-width: 480px) {
+  .testimonial-card {
+    width: 90%;
+  }
+
+  .arrow-btn img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .left { left: 1%; }
+  .right { right: 1%; }
+
+  .review {
+    font-size: 14px;
+  }
+}

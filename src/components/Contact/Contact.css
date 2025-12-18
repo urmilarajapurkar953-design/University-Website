@@ -1,0 +1,220 @@
+/* MAIN CONTACT SECTION */
+.contact {
+  width: 90%;
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* LEFT SIDE CONTENT */
+.contact-col {
+  flex-basis: 45%;
+  max-width: 500px;
+}
+
+/* HEADING */
+.contact-col h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #1e266d;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  margin-bottom: 12px;
+}
+
+.contact-col h3 img {
+  width: 30px;
+  height: 30px;
+}
+
+/* PARAGRAPH */
+.contact-col p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #4a4a4a;
+  margin: 15px 0 25px;
+  background: #f7f9ff;
+  padding: 14px 18px;
+  border-left: 4px solid #212EA0;
+  border-radius: 6px;
+}
+
+/* CONTACT LIST */
+.contact-col ul {
+  padding: 0;
+  margin: 0;
+}
+
+.contact-col ul li {
+  list-style: none;
+  margin: 18px 0;
+  font-size: 17px;
+  color: #2c2c2c;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  transition: 0.2s ease-in-out;
+}
+
+.contact-col ul li:hover {
+  background: #eef1ff;
+  transform: translateX(5px);
+}
+
+.contact-col ul li img {
+  width: 26px;
+  height: 26px;
+}
+
+/* RIGHT EMPTY AREA */
+.contact-right {
+  flex-basis: 45%;
+  min-height: 200px;
+}
+
+/* FORM CONTAINER */
+.contact-col form {
+  width: 100%;
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* LABELS */
+.contact-col form label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e266d;
+  margin-bottom: -10px;
+}
+
+/* INPUT FIELDS */
+.contact-col form input,
+.contact-col form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1.7px solid #c9c9c9;
+  outline: none;
+  transition: 0.25s ease-in-out;
+  background: #f7f9ff;
+}
+
+.contact-col form input:focus,
+.contact-col form textarea:focus {
+  border-color: #212EA0;
+  box-shadow: 0 0 6px rgba(33, 46, 160, 0.3);
+  background: #ffffff;
+}
+
+.contact-col form textarea {
+  resize: none;
+  height: 120px;
+  line-height: 1.5;
+}
+
+/* SUBMIT BUTTON */
+.contact-col form button {
+  width: 160px;
+  padding: 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background: #212EA0;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.contact-col form button:hover {
+  background: #1a237e;
+  transform: scale(1.03);
+}
+
+.contact-col span{
+  display: block;
+  margin: 20px 0;
+}
+
+/* ----------------------------------------------------
+      RESPONSIVE DESIGN (Only added below)
+----------------------------------------------------- */
+
+/* Tablets */
+@media (max-width: 900px) {
+  .contact {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .contact-col {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .contact-col h3 {
+    font-size: 26px;
+  }
+
+  .contact-col p,
+  .contact-col ul li {
+    font-size: 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .contact {
+    margin: 50px auto;
+  }
+
+  .contact-col h3 {
+    font-size: 22px;
+    gap: 8px;
+  }
+
+  .contact-col h3 img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .contact-col p {
+    font-size: 15px;
+    padding: 12px 14px;
+  }
+
+  .contact-col ul li {
+    font-size: 15px;
+    gap: 10px;
+    padding: 8px 10px;
+  }
+
+  .contact-col ul li img {
+    width: 22px;
+    height: 22px;
+  }
+
+  /* Form full width */
+  .contact-col form {
+    padding: 20px;
+  }
+
+  .contact-col form button {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px;
+  }
+}
